@@ -21,7 +21,7 @@ const Navbar = () => {
         <div onClick={() => router.push("/")} className={styles.containerlogo}>
           <Image
             src={"https://links.papareact.com/f90"}
-            height={35}
+            height={36}
             width={150}
             objectFit={"contain"}
             alt={"image"}
