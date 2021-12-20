@@ -63,7 +63,7 @@ const Checkout=()=> {
         <div className={styles.rightpart}>
           <div className={styles.total}>
             <p> Subtotal Basket</p>
-            <p> {price.toFixed(2)}</p>
+            <p>RS {price.toFixed(2)}</p>
           </div>
         </div>
       </main>
