@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import Banner from "./Banner";
 import Productfeed from "./Productfeed";
 
-export default function Home({ products }) {
+const Home = ({ products }) => {
   return (
     <>
       <Head>
@@ -19,7 +19,7 @@ export default function Home({ products }) {
       </div>
     </>
   );
-}
+};
 export async function getServerSideProps(context) {
   const products = await fetch("https://fakestoreapi.com/products").then(
     (res) => res.json()
@@ -31,3 +31,4 @@ export async function getServerSideProps(context) {
     },
   };
 }
+export default Home;

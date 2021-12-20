@@ -10,13 +10,11 @@ import { signIn, signOut, useSession } from "next-auth/react";
 
 import { useSelector } from "react-redux";
 import { selectItems } from "../src/slices/Basketslice";
-function Navbar() {
-  
+const Navbar = () => {
   const items = useSelector(selectItems);
-  console.log(items);
+
   const router = useRouter();
   const session = useSession();
-
 
   return (
     <header className={styles.navbar}>
@@ -75,6 +73,6 @@ function Navbar() {
       </div>
     </header>
   );
-}
+};
 
 export default Navbar;
