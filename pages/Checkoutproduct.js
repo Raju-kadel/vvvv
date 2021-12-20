@@ -3,7 +3,7 @@ import StarIcon from "@mui/icons-material/Star";
 import { addToBasket, removeFromBasket } from "../src/slices/Basketslice";
 import { useDispatch } from "react-redux";
 import styles from "../styles/Checkoutproduct.module.css";
-function Checkoutproduct({
+const Checkoutproduct=({
   id,
   title,
   description,
@@ -11,7 +11,7 @@ function Checkoutproduct({
   price,
   image,
   category,
-}) {
+})=> {
   const dispatch = useDispatch();
   const add = () => {
     const product = { id, title, description, rating, price, image, category };
@@ -43,16 +43,16 @@ function Checkoutproduct({
       </div>
       <div className={styles.buttons}>
         <div>
-          {" "}
+          
           <p className={styles.button} onClick={add}>
             Add To Basket
-          </p>{" "}
+          </p>
         </div>
         <div>
-          {" "}
+          
           <p className={styles.button} onClick={remove}>
             Remove From Basket
-          </p>{" "}
+          </p>
         </div>
       </div>
     </div>

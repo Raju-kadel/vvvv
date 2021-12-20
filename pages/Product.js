@@ -7,12 +7,12 @@ import {addToBasket} from '../src/slices/Basketslice'
 
 const max_rating=5;
 const min_rating=1;
-function Product({id,title,description,image,category,price}) {
+const Product=({id,title,description,image,category,price})=> {
     const[rating]=useState(
        Math.floor( Math.random()*(max_rating-min_rating+1))+min_rating
     )
     const dispatch = useDispatch();
-    const addtobasket=()=>{
+    const addtocart=()=>{
         const product={id,title,description,image,category,rating,price};
         dispatch(addToBasket(product))
 
@@ -22,20 +22,20 @@ function Product({id,title,description,image,category,price}) {
     return (
         <div className={styles.container}>
             <p className={styles.category}>{category}</p>
-           <div className={styles.image}>  <Image src={image} width={250} height={240} objectFit='contain'  /></div>
+           <div className={styles.image}>  <Image alt="image" src={image} width={250} height={240} objectFit='contain'  /></div>
             <h4 className={styles.title}>{title}</h4>
             <div className={styles.rating} >
             {Array(rating)
             .fill()
             .map((_,i)=>(
-                <StarIcon className={styles.star} />
+                <StarIcon key={i} className={styles.star} />
             ))
             
             }
             </div>
             <p className={styles.description}>{description}</p>
             <h4 className={styles.price}>$ {price}</h4>
-            <div className={styles.button} ><button onClick={addtobasket}>Add to Basket</button></div>
+            <div className={styles.button} ><button onClick={addtocart}>Add to Basket</button></div>
         </div>
     )
 }

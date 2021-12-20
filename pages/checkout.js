@@ -5,11 +5,10 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { selectItems, totalPrice } from "../src/slices/Basketslice";
 import { useSelector } from "react-redux";
 import Checkoutproduct from "./Checkoutproduct";
-function Checkout() {
+const Checkout=()=> {
   const items = useSelector(selectItems);
   const price = useSelector(totalPrice);
-  console.log(`checkout ko ho ${items}`);
-  console.log(items?.title);
+ 
   return (
     <div>
       <Navbar />

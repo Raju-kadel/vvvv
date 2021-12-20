@@ -1,7 +1,7 @@
 import styles from "../styles/Productfeed.module.css";
 import Product from "./Product";
 
-function Productfeed({ products }) {
+const Productfeed=({ products })=> {
   
   return (
     <div className={styles.container}>
