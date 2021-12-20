@@ -1,0 +1,130 @@
+.searchicon{
+    color:rgb(49, 34, 34);
+    background-color:rgb(235, 153, 2);
+    height:2.5rem;
+    width:3.3rem;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.searchicon:hover{
+    background-color: rgb(212, 147, 5);
+}
+.container{
+    display: flex;
+    background-color: rgb(8, 25, 66);
+    align-items: center;
+    flex-grow: center;
+    justify-content: space-between;
+    position:sticky
+  
+}
+.returns p:last-child{
+font-size: 1.3rem;
+}
+.returns p:first-child{
+font-size: 1.1rem;
+}
+.navbarname,
+.returns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    cursor:pointer;
+    
+}
+.containerlogo{
+    margin-top: 6px;
+    padding-top: 3px;
+    flex: 0.2;
+    cursor: pointer;
+}
+/* .navbar{
+    position:fixed;
+} */
+.containerinput{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    outline: none;
+    border: none;
+    flex: 0.5;
+    width: 100%;
+    text-decoration: none;
+    margin:0;
+}
+
+.containerinput>input{
+    width: 85%;
+    height: 2.1rem;
+}
+.containerinput>input:focus{
+   outline:none;
+   text-decoration: none;
+}
+.bottom{
+    height:2.1rem;
+    background-color: rgb(57, 67, 95);
+    display: flex;
+color:white;
+align-items: center;
+}
+.bottom>p{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    padding:0.25px;
+    cursor: pointer;
+}
+.bottom p:first-child{
+    display: flex;
+    color:white;
+    align-items: center;
+}
+.basket{
+    display: flex;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.count{
+    position: absolute;
+    top:0;
+    left:36%;
+    background-color: rgb(240, 137, 20);
+    font-size: 14px;
+    border-radius: 45%;
+    padding-right: -8px;
+    padding-left: 6px;
+    /* padding:3px; */
+    /* padding-bottom: 0.5px; */
+    /* padding-top: 1px; */
+    width: 13px;
+    height:16px;
+}
+.basket >p{
+    padding-top: 15px;
+    padding-left: 3px;
+    font-size: 1.4rem;
+}
+.cart{
+    font-size: 2.8rem;
+}
+.navbarinfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    flex:0.35;
+    padding-right: 20px;
+
+}
+.navbarname p:first-child{
+    font-size: 1.1rem;
+}
+.navbarname p:last-child{
+    font-size: 1.3rem;
+}

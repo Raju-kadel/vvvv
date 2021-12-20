@@ -1,0 +1,25 @@
+.container{
+    position:relative;
+}
+.carousel{
+    top: 0;
+    /* position: relative; */
+    /* height: 32rem; */
+    /* width:100vw */
+    
+ 
+}
+.containerdiv{
+    position:absolute;
+    height:12rem;
+    width: 100%;
+    background-image: linear-gradient(to top, rgb(75, 67, 67), transparent);
+   
+     z-index: 20;
+    top: 61%; 
+    bottom:0;
+}
+.img{
+    top:0;
+    width:100vw;
+}
