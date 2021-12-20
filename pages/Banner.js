@@ -4,7 +4,9 @@ import Image from 'next/image';
 const Banner=()=>{
   return (
     <div className={styles.container}>
-      
+    {`
+    You're free.
+  `}
       <Carousel
         autoplay={true}
         interval={5000}
