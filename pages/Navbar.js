@@ -8,9 +8,9 @@ import { useRouter } from "next/router";
 import { signIn, signOut, useSession } from "next-auth/react";
 
 import { useSelector } from "react-redux";
-import { selectItems } from "../src/slices/Basketslice";
+import { Selectitems } from "../src/slices/Basketslice";
 const Navbar = () => {
-  const items = useSelector(selectItems);
+  const items = useSelector(Selectitems);
 
   const router = useRouter();
   const session = useSession();

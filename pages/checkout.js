@@ -2,12 +2,12 @@ import Image from "next/image";
 import Navbar from "./Navbar";
 import styles from "../styles/checkout.module.css";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import { selectItems, totalPrice } from "../src/slices/Basketslice";
+import { Selectitems, Totalprice } from "../src/slices/Basketslice";
 import { useSelector } from "react-redux";
 import Checkoutproduct from "./Checkoutproduct";
 const Checkout=()=> {
-  const items = useSelector(selectItems);
-  const price = useSelector(totalPrice);
+  const items = useSelector(Selectitems);
+  const price = useSelector(Totalprice);
  
   return (
     <div>
