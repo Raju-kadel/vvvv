@@ -21,8 +21,9 @@ const Product=({id,title,description,image,category,price})=> {
 
     return (
         <div className={styles.container}>
+      
             <p className={styles.category}>{category}</p>
-           <div className={styles.image}>  <Image alt="image" src={image} width={250} height={240} objectFit='contain'  /></div>
+           <div className={styles.image}>  <Image alt={"image"} src={image} width={250} height={240} objectFit={'contain'}  /></div>
             <h4 className={styles.title}>{title}</h4>
             <div className={styles.rating} >
             {Array(rating)

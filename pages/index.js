@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Navbar from "./Navbar";
-import styles from "../styles/Home.module.css";
+
 import Banner from "./Banner";
 import Productfeed from "./Productfeed";
 
 const Home = ({ products }) => {
   return (
-    <>
+    <div>
       <Head>
         <title>Amazon Store</title>
       </Head>
@@ -17,7 +17,7 @@ const Home = ({ products }) => {
         <Banner />
         <Productfeed products={products} />
       </div>
-    </>
+    </div>
   );
 };
 export async function getServerSideProps(context) {

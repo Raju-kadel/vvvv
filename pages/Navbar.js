@@ -4,9 +4,8 @@ import styles from "../styles/Navbar.module.css";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useRouter } from "next/router";
-//next-auth login credentials
+
 import { signIn, signOut, useSession } from "next-auth/react";
-//Pulling data from redux-store
 
 import { useSelector } from "react-redux";
 import { selectItems } from "../src/slices/Basketslice";
@@ -21,14 +20,15 @@ const Navbar = () => {
       <div className={styles.container}>
         <div onClick={() => router.push("/")} className={styles.containerlogo}>
           <Image
-            src="https://links.papareact.com/f90"
+            src={"https://links.papareact.com/f90"}
             height={35}
             width={150}
-            objectFit="contain"
+            objectFit={"contain"}
+            alt={"image"}
           />
         </div>
         <div className={styles.containerinput}>
-          <input type="text" />
+          <input type={"text"} />
           <SearchIcon className={styles.searchicon} />
         </div>
         <div className={styles.navbarinfo}>
@@ -38,8 +38,8 @@ const Navbar = () => {
           >
             <p>
               {session?.data?.user?.name
-                ? `Hello ${session.data.user.name}`
-                : "Sign in"}
+                ? (`Hello ${session.data.user.name}`)
+                : ("Sign in")}
             </p>
             <p>Account and Lists</p>
           </div>
@@ -59,9 +59,9 @@ const Navbar = () => {
       </div>
       <div className={styles.bottom}>
         <p>
-          <MenuIcon className="menuicon" />
-          <p>All</p>
+          <MenuIcon className={styles.menuicon} />
         </p>
+        <p>All</p>
         <p>Prime Video</p>
         <p>Amazon's Business</p>
         <p>Today's Deals</p>

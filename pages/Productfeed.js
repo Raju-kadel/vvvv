@@ -5,6 +5,7 @@ const Productfeed=({ products })=> {
   
   return (
     <div className={styles.container}>
+
       {products.map(({ id, title, description, image, price, category }) => (
         <Product
           key={id}

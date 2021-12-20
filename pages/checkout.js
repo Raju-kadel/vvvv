@@ -11,14 +11,15 @@ const Checkout=()=> {
  
   return (
     <div>
+   
       <Navbar />
       <main className={styles.containerr}>
         <div className={styles.leftpart}>
           <Image
-            src="https://links.papareact.com/ikj"
+            src={"https://links.papareact.com/ikj"}
             height={220}
             width={841}
-            alt="image"
+            alt={"image"}
           />
           <div className={styles.shopping}>
             <h1>
@@ -29,7 +30,7 @@ const Checkout=()=> {
             </h1>
             <hr className={styles.line} />
           </div>
-          <div className="styles.basketitems">
+          <div className={styles.basketitems}>
             {items.length != 0 ? (
               items.map(
                 ({
@@ -62,7 +63,7 @@ const Checkout=()=> {
         <div className={styles.rightpart}>
           <div className={styles.total}>
             <p> Subtotal Basket</p>
-            <p>$ {price.toFixed(2)}</p>
+            <p> {price.toFixed(2)}</p>
           </div>
         </div>
       </main>

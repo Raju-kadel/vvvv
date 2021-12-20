@@ -22,11 +22,13 @@ const Checkoutproduct=({
   }
   return (
     <div className={styles.container}>
+   
       <Image
+      alt={'image'}
         src={image}
         height={160}
         width={200}
-        objectFit="contain"
+        objectFit={"contain"}
         className={styles.image}
       />
       <div className={styles.iteminfo}>
